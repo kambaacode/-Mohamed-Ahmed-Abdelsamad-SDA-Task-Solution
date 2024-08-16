@@ -1,0 +1,132 @@
+.form_styling{
+    width: 500px;
+    height: 650px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow:3px 3px 10px 0px;
+}
+
+.h1_styling{
+    color:black;
+    text-align:center;
+    font-family:ui-sans-serif;
+    padding-top:15px;
+}
+
+.inputField1{
+    width: 80%;
+    height: 9%;
+    background-color:white;
+    margin-left:47px;
+    margin-top:50px;
+    border: 1.2px solid rgb(48, 45, 45);
+    border-radius: 5px;
+    color: black;
+    text-indent: 10px ;
+    font-size: large;
+    font-weight: 500;
+}
+.inputField2{
+    width: 80%;
+    height: 9%;
+    background-color:white;
+    margin-left:47px;
+    margin-top:30px;
+    border: 1.2px solid rgb(48, 45, 45);
+    border-radius: 5px;
+    color: black;
+    text-indent: 10px ;
+}
+
+.subButton{
+    width: 23%;
+    height: 35px;
+    margin-top: 35px;
+    background-color: white;
+    border: 1.2px solid black;
+    color: black;
+    margin-left: 39%;
+    margin-right: auto;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.subButton::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    z-index: -1;
+}
+.subButton:hover{
+    color: white;
+}
+.subButton:hover::before{
+    left: 0%;
+}
+
+.labels{
+    position: relative;
+    top: 30px;
+    left: 48px;
+    font-weight: 700;
+}
+
+.para{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+.linkk{
+    width: 50px;
+    margin-left: 45%;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 300;
+    position: relative;
+    top: 5px;
+}
+
+.linkk:hover{
+    font-weight:800 ;
+}
+
+.paragraph_error1{
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    right: 46%;
+}
+.paragraph_error2{
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    right: 46%;
+}
+
+.paragraph_error3{
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    right: 47%;
+}
+
+.paragraph_error4{
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    right: 47%;
+}

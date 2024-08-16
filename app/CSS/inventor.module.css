@@ -1,0 +1,54 @@
+.main{
+    width: 95%;
+    margin: auto;
+    height: 500px;
+    margin-top: 100px;
+    
+}
+
+.main{
+    display: flex;
+    gap: 20%;
+}
+
+.main .section .div{
+    margin-top: 30px;
+    text-align: center;
+    border: .5px solid black;
+    border-radius: 10px;
+    height: 180px;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    background-color: gainsboro;
+}
+
+.linkk{
+    color: #525151;
+    border: unset;
+    width: 55px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    top: -5px;
+    font-size: 15px;
+}
+.linkk:hover{
+    color:  black;
+}
+
+.addButton{
+    margin-top: 10px;
+    background-color: inherit;
+    cursor: pointer;
+    border: .25px solid black;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.addButton:hover{
+    background-color: white;
+    color: black;
+}

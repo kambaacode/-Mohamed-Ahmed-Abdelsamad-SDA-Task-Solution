@@ -1,0 +1,27 @@
+.list_items{
+    color: #525151;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+.list_items:hover{
+    color: black;
+}
+
+
+.button1{
+    background-color: inherit;
+    color: #525151;
+    border: unset;
+    width: 55px;
+    height: 30px;
+    position: relative;
+    top: 23px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.button1:hover{
+    color: black;
+}
