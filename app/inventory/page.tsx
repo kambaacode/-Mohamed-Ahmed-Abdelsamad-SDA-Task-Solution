@@ -32,6 +32,8 @@ function Inventory(){
     const [mechanical, setMechanical] = useState(null)
     const [electrical, setElectrical] = useState(null)
 
+    let user:any = localStorage.getItem('username') || null
+
     const showItems = async ()=> {
         const response = await fetch("http://127.0.0.1:8000/Inventory/" , 
             {
@@ -80,6 +82,7 @@ function Inventory(){
                                         let itemsArray:any[] = JSON.parse(localStorage.getItem("itemsArray") || "[]")
                                         if(user){
                                             const itemData = {
+                                                "username":user,
                                                 "a": "Electrical",
                                                 "b": item.ItemName,
                                                 "c": item.voltage,
@@ -118,6 +121,7 @@ function Inventory(){
                                         let itemsArray:any[] = JSON.parse(localStorage.getItem("itemsArray") || "[]")
                                         if(user){
                                             const itemData = {
+                                                "username":user,
                                                 "a": "Mechanical",
                                                 "b": item.ItemName,
                                                 "c": item.material,
@@ -156,6 +160,7 @@ function Inventory(){
 
                                           if(user){
                                               const itemData = {
+                                                  "username":user,
                                                   "a": "Raw",
                                                   "b": item.ItemName,
                                                   "c":item.qunatity,
