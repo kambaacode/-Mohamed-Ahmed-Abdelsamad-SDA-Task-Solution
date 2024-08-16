@@ -17,15 +17,17 @@ function Home() {
     <>
       <NavBar/>
       {
-        user && (storedItemsArray)? (
+        user && (storedItemsArray) ? (
           <>
             <h1 >Welcome {user}</h1>
             <br /><br />
             <h3>Your Items: </h3>
             <br /><br />
             {
-              storedItemsArray.map( (item:any) =>
+              storedItemsArray.filter( (item:any ) => user === item.username ) 
+              .map( (item:any) =>
               (
+                
               <div className={styles.items}>
                   <h1>{item.Material}</h1>
                   <h3>{item.a}</h3>
